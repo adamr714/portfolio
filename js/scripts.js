@@ -33,3 +33,7 @@ $('.menu_toggle').on('click', function(){
 $('.content').on('click', function(){
   $page.removeClass('shazam');
 });
+
+$('.bob').on('click', function(){
+  $page.removeClass('shazam');
+});
