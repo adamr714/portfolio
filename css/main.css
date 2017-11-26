@@ -1,3 +1,12 @@
+@import url("//hello.myfonts.net/count/353cd4");
+
+  
+@font-face {
+	font-family: 'MrChalk';
+	src: url('../webfonts/353CD4_0_0.eot');src: url('../webfonts/353CD4_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/353CD4_0_0.woff2') format('woff2'),url('../webfonts/353CD4_0_0.woff') format('woff'),url('../webfonts/353CD4_0_0.ttf') format('truetype');}
+
+
+
 * {margin: 0; padding: 0}
 
 html, body { 
@@ -13,6 +22,13 @@ background-color: darkslategrey;
   color: white;
 }
 
+.MrChalk { 
+	font-family: MrChalk;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
 .thank_you {
 	z-index: -50;
 	position: fixed;
@@ -21,6 +37,28 @@ background-color: darkslategrey;
 	border: 1px solid white;
 	font-size: 3em;
 	padding: .5em;
+}
+*/
+.list {
+	color: black;
+	text-align: center;
+	font-size: 1.2em;
+}
+.thank_you {
+	z-index: -50;
+	position: fixed;
+	bottom: 344px;
+	left: 400px;
+	border: 1px solid white;
+	font-size: 3em;
+	padding: .5em;
+	width: 14em;
+}
+
+.inisde_thank_you {
+	border: 1px solid white;
+	padding: 1em;
+	background-color: darkslategrey;
 }
 
 .devTitle {
@@ -222,6 +260,7 @@ h3 {
     border: 1px solid crimson;
     background-color: white;
     margin-right: .8em;
+	margin-bottom: .5em;
     border-radius: 5px;
 }
 
