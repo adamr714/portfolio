@@ -220,7 +220,11 @@ h3 {
 	background-color: #9CC4E4;
 }
 
-
+#about {
+	position: relative;
+	background-color: white;
+	min-height: 640px;
+}
 .intro {
     margin-top: 1.5em;
 	
@@ -264,8 +268,18 @@ h3 {
 .iconName {
 	float:left;
 	padding-right: .5em;
+	color: white;
+	text-decoration: none;
 }
 
+.iconName a {
+    text-decoration: none;
+    color: white;
+}
+
+.iconName a:hover {
+    text-decoration: underline;
+}
 .grey {
     color: darkslategrey;
 /*    text-align: center;*/
@@ -405,14 +419,30 @@ button:hover {
 .white {
 	color: white;
 }
-.spacer {
-	
+
+.cool_image {
+ position: absolute;
+ right: 0px;
 }
+
 @media screen and (max-width:400px){	
+
+	#header {
+	min-height: 75px;
+	background-color: darkslategrey;
+    }
+	
+	.mobile {
+    margin-top: 1em;
+	}
+	
 	.iconName {
 		display:none;
 	}
 	
+	.logo {
+		
+	}
 	.menu_indicator {
 		display: none;
 	}
@@ -426,5 +456,8 @@ button:hover {
 	width: 100%;
 	}
 
+	.cool_image {
+	display: none
+	}
 }
 
