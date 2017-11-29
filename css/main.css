@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-background-color: darkslategrey;
+background-color: whitesmoke;
 /*  background-image: linear-gradient(#023867, #f6f7f7);*/
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -49,10 +49,10 @@ background-color: darkslategrey;
 	position: fixed;
 	bottom: 344px;
 	left: 400px;
-	border: 1px solid white;
-	font-size: 3em;
+	font-size: 2em;
 	padding: .5em;
 	width: 14em;
+	color: grey;
 }
 
 .iconPlacement {
@@ -90,9 +90,9 @@ background-color: darkslategrey;
 }
 
 .inisde_thank_you {
-	border: 1px solid white;
+/*	border: 1px solid white;*/
 	padding: 1em;
-	background-color: darkslategrey;
+	background-color: whitesmoke;
 }
 
 .devTitle {
@@ -106,9 +106,35 @@ background-color: darkslategrey;
     padding: .1em;
 }
 
+.who {
+	font-size: 1.2em;
+	line-height: 160%;
+}
+
+.black {
+	color: black;
+}
 #header {
 	min-height: 50px;
-	background-color: darkslategrey;
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: all 1s ease-in-out;
+	z-index: 150;
+	
+}
+
+#header.active {
+	border-bottom: 1px solid #6b7c93;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.active {
+	border-bottom: 1px solid #6b7c93;
 }
 
 /*For Menu Rotation Idea*/
@@ -145,21 +171,22 @@ background-color: darkslategrey;
 	margin: 0.5em;
 	float: left;
 	/* font-family: 'Roboto', sans-serif; */
-	color: white;
+	color: black;
 	margin-top: -0.3em;
 	font-size: 2.5em;
 }
 
 .info {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	position: absolute;
 	top: 16px;
 	right: 21px;
-	color: white;
+	color: #6b7c93;
 	font-size: 1.5em
 }
 
 .logo {
+	font-size: .7em;
 	float: left;
 	padding-right: 1em;
 }
@@ -175,30 +202,32 @@ nav li {
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 2em;
-    line-height: 125%;
+	font-family: 'Nunito', sans-serif;
+    color: #6b7c93;
+    font-size: 1.5em;
+    line-height: 155%;
     margin-bottom: .5em;
 }
 
 h2 {
-	font-family: 'Roboto', sans-serif;
-	color: darkslategrey;
+	font-family: 'Nunito', sans-serif;
+	color: whitesmoke;
 	text-align: center;
-	margin-top: 1em;
+/*	margin-top: 1em;*/
 	margin-bottom: .5em;
 	font-size: 2em;
-	text-shadow: 2px 2px 4px #ccc;
-	background-color: white;
+/*	text-shadow: 2px 2px 4px #ccc;*/
+	background-color: mediumaquamarine;
+/*
 	border-top: 1px solid darkslategrey;
 	border-bottom: 1px solid darkslategrey;
+*/
 	padding: .2em;
-	box-shadow: 2px 2px 8px darkslategrey;
+/*	box-shadow: 2px 2px 8px darkslategrey;*/
 }
 
 h3 {
-	font-family: 'Roboto', sans-serif;
+	font-family: '#Nunito', sans-serif;
     color: darkslategrey;
     font-size: 1.5em;
     line-height: 125%;
@@ -206,34 +235,63 @@ h3 {
 	text-align: center;
 }
 #intro {
+/*
 	background-image: url(../images/man_computer.png); 
 	background-size: cover;
 	background-position: center center;
 	min-height: 640px;
+	
+*/
+	background-color: white;
+	margin-top: 2em;
+/*	transform: rotate(-10deg);*/
+}
+
+.technology {
+	color: black;
+	padding: 0px;
+	margin: 0px;
+	font-size: 1.3em;
+}
+
+.used {
+	font-size: 1em;
+	line-height: 125%;
+	color: black;
+	padding-left: 1.3em;
+}
+
+.intro {
+    margin-top: 5em;
+
 }
 
 #dev_skills {
-	 background-image: url(../images/projects.png); 
-	background-size: cover;
-	background-position: center center;
-	min-height: 640px;
-	background-color: #9CC4E4;
+/*	 background-image: url(../images/projects.png); */
+/*	background-size: cover;*/
+/*	background-position: center center;*/
+/*	min-height: 640px;*/
+	background-color: whitesmoke;
 }
 
-#about {
+#h2 {
 	position: relative;
 	background-color: white;
-	min-height: 640px;
+
 }
-.intro {
-    margin-top: 1.5em;
+
+
+.type-it {
+	color: darkslategray;
+/*	text-shadow: 2px 2px 4px #000;*/
+}
+
+p.adventures {
+	font-size: 1em;
+	line-height: 140%;
 	
 }
 
-.type-it {
-	color: yellow;
-	text-shadow: 2px 2px 4px #000;
-}
 
 /*Comtact*/
 .contact {
@@ -245,36 +303,38 @@ h3 {
 }
 
 .fa {
-    color: #2790B0;
+    color: #6b7c93;
 }
 .fa-envelope:hover {
-    color: wheat; 
+    color: crimson; 
 }
 
 .fa-linkedin-square:hover {
-     color: wheat;   
+     color: crimson;   
 }
 
 .fa-github:hover {
-     color: wheat;   
+     color: crimson;   
 }
 
 .menu_icon {
     float: left;
     padding-left: .5em;
     /* padding-right: .5em; */
+	font-size: .7em
 }
 
 .iconName {
 	float:left;
 	padding-right: .5em;
-	color: white;
+	color: #2790B0;
 	text-decoration: none;
 }
 
 .iconName a {
     text-decoration: none;
-    color: white;
+    color: #2790B0;
+	font-size: .7em
 }
 
 .iconName a:hover {
@@ -282,6 +342,7 @@ h3 {
 }
 .grey {
     color: darkslategrey;
+	text-align: center;
 /*    text-align: center;*/
 }
 
@@ -296,31 +357,49 @@ h3 {
 }
 
 .projects {
-    border: 1px solid crimson;
+/*    border: 1px solid crimson;*/
     background-color: white;
 	padding: .5em;
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 5px;
+	width: 90%;
+	margin-right: .5em;
+	position: relative;
+	min-height: 34em;
 }
 
+.col-6.projects {
+    width: 48%;
+}
 .dev {
-    border: 1px solid crimson;
+/*    border: 1px solid crimson;*/
     background-color: white;
     margin-right: .8em;
 	margin-bottom: .5em;
-    border-radius: 5px;
+/*    border-radius: 5px;*/
 }
 
 
+/*
 .projects:hover {
 	box-shadow: 4px 4px 8px #000;
 	background-color: antiquewhite;
 }
-
+*/
+.who_div {
+	background-color: white;
+	
+	
+}
+.whoamI {
+	margin-top: 1em;
+}
 .image {
 	width: 100%;
-	border: 1px solid darkslategrey;
+	max-height: 450px;
+	overflow: hidden;
+/*	border: 1px solid darkslategrey;*/
 }
 
 .nopad {
@@ -346,6 +425,10 @@ h3 {
 	font-weight: bold;
 }
 
+#about {
+	padding-bottom: 2em;
+}
+
 .linkButton {
 	color: white;
 	background-color: darkslategrey;
@@ -361,59 +444,23 @@ h3 {
 	border: 1px solid crimson;
 }
 
-/*
-button {
-	  font-family: 'Roboto', sans-serif;
-	color: white;
-	background-color: darkslategrey;
-	text-align: center;
-	width: 100%;
-	padding: .5em;
-	margin-top: .5em;
-	border: 1px solid #2790B0;
-	font-size: 1em;
-}
-*/
-
-button:hover {
-    background-color: #2790B0;
-	border: 1px solid crimson;
-}
 
 button { 
-  	font-family: 'Roboto', sans-serif;
-  	border-radius: 5px;
   	padding: .5em;
-  	/* padding: 15px 55px; */
   	font-size: 1em;
   	text-decoration: none;
-  	/* margin: 20px; */
-  	color: #fff;
+  	color: black;
   	position: relative;
   	display: inline-block;
   	width: 100%;
-	margin-top: .5em;
+	background-color: aquamarine;
+	border: 0px;
 }
 
 button:hover {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
-}
-
-.green {
-  background-color: darkslategrey;
-  box-shadow: 3px 5px 5px #888888;
-  border-radius: 5px;
-  transition: all 1s ease;
-  transform: scale(1);
-}
-
-.green:hover {
-	background-color: #2790B0;
-	border: 1px solid crimson;
-	transform: scale(1.1) perspective(1px);
-	z-index: 40;
+  transform: translate(2px, 2px);
+  -webkit-transform: translate(2px, 2px);
+  box-shadow: 4px 4px 8px #6b7c93;
 }
 
 .white {
@@ -428,27 +475,55 @@ button:hover {
 @media screen and (max-width:400px){	
 
 	#header {
+/*
 	min-height: 75px;
 	background-color: darkslategrey;
+*/
     }
 	
 	.mobile {
     margin-top: 1em;
 	}
 	
+	button { 
+  	padding: .5em;
+  	font-size: 1em;
+  	text-decoration: none;
+  	color: black;
+  	position: relative;
+  	display: inline-block;
+  	width: 100%;
+	background-color: aquamarine;
+	border: 0px;
+	margin-top: .5em;
+}
+
+	h2 {
+		font-size: 1.6em;
+	}
+	.col-6.projects {
+    width: 100%;
+}
 	.iconName {
 		display:none;
 	}
 	
+	.used {
+	font-size: 1em;
+	padding-left: 0;
+}
+
 
 	.menu_indicator {
 		display: none;
 	}
-	.logo {
-	font-size: .7em;
+
+		.logo {
+	font-size: .9em;
 	position: absolute;
-	left: -107px;
+	left: -238px;
 	}
+	
 	
 	.linkButton {
 	width: 100%;

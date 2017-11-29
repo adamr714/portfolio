@@ -26,20 +26,29 @@ $('.type-it').typeIt({
 
 // elements
 var $page = $('.page');
-
 $('.menu_toggle').on('click', function(){
   $page.toggleClass('shazam');
-	if ($('.page').hasClass('shazam')) { $('.content').css({position:"fixed","width":'100%'}) } else { $('.content').css({position:"relative","width":'100%'}); }
+//	if ($('.page').hasClass('shazam')) { $('.content').css({position:"fixed","width":'100%'}) } else { $('.content').css({position:"relative","width":'100%'}); }
 });
 $('.content').on('click', function(){
-	$('.content').css({position:"relative","width":'100%'}); 
+//	$('.content').css({position:"relative","width":'100%'}); 
 	$page.removeClass('shazam');
 });
 
 $('.bob').on('click', function(){
-	$('.content').css({position:"relative","width":'100%'});   
+//	$('.content').css({position:"relative","width":'100%'});   
 	$page.removeClass('shazam');
 	
+});
+
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 20) {
+        $("#header").addClass("active");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $("#header").removeClass("active");
+    }
 });
 
 

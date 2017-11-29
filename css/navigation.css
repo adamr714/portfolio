@@ -72,7 +72,7 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #a4a4a4;
+  color: #6b7c93;
   -webkit-transition: color .2s;
   transition: color .2s;
 }
@@ -80,7 +80,7 @@
   position: relative;
   display: inline-block;
   margin-right: 25px;
-  color: #f0f0f0;
+/*  color: #f0f0f0;*/
 }
 .menu_items a .icon:after {
   position: absolute;
@@ -98,7 +98,7 @@
   transition: border-color .2s;
 }
 .menu_items a:hover {
-  color: #f0f0f0;
+  color: crimson;
 }
 .menu_items a:hover .icon:after {
   border-color: #F37272;
