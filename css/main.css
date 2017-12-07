@@ -513,6 +513,11 @@ button:hover {
 	padding-left: 0;
 }
 
+	.dev {
+    background-color: white;
+    margin-right: .8em;
+	margin-bottom: .5em;
+}
 
 	.menu_indicator {
 		display: none;
